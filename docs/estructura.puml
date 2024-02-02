@@ -1,0 +1,46 @@
+@startmindmap
+skinparam dpi 300
+'skinparam linetype ortho
+skinparam nodesep 100
+skinparam ranksep 100
+
+skinparam default{
+  FontName SF Mono
+  FontSize 12
+}
+
+<style>
+mindmapDiagram {
+  .folder {
+    BackgroundColor lightblue
+  }
+}
+</style>
+
+* ./
+** index.html
+** paxina_1.html
+** blog/<<folder>>
+*** articulo_1.html
+*** articulo_2.html
+** components/<<folder>>
+*** calendario.html
+*** formulario.html
+** assets/<<folder>>
+*** favicon.ico
+*** media/<<folder>>
+**** images/<<folder>>
+***** imaxe_1.webp
+***** imaxe_2.webp
+**** fonts/<<folder>>
+***** tipografia.ttf
+*** style/<<folder>>
+**** reset.css
+**** base.css
+**** clases.css
+*** lib/<<folder>>
+**** script_1.js
+**** script_2.js
+** docs/<<folder>>
+
+@endmindmap
