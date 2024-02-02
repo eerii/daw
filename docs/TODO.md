@@ -1,0 +1,21 @@
+- [x] Texto introductorio
+- [X] Inventario de contido
+    - Revisar e engadir algunha cousa se fai falta
+- [x] Arquitectura da información
+    - Mirar se se pode completar máis
+    - [ ] Engadir cores
+    - [ ] Volver a generar la imagen
+- [ ] Casos de uso
+    - [ ] Mirar horarios na cartelera
+    - [ ] Comprar entradas
+    - [ ] Ler unha reseña
+    - [ ] Enviar unha pregunta
+    - ...
+- [ ] Mapa web
+- [ ] Interfaces 5 páginas
+    - [ ] Prototipo manual
+    - [ ] Wireframe (plantuml? https://plantuml.com/salt)
+    - [ ] Mockup (figma)
+    - [ ] Storyboard
+        - [ ] Comprar entrada
+- [x] Estructura de ficheros

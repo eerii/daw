@@ -1,0 +1,68 @@
+@startuml
+skinparam dpi 300
+skinparam linetype ortho
+skinparam nodesep 50
+skinparam ranksep 100
+
+skinparam default{
+  FontName SF Mono
+  FontSize 12
+}
+
+file Index
+
+file Blog #lightblue
+file "Artículo 1" as A1 #lightblue
+file "Artículo 2" as A2 #lightblue
+
+file Reseñas
+
+file Cartelera #lightgreen
+file "Película 1" as P1 #lightgreen
+file "Película 2" as P2 #lightgreen
+file Trailer
+file "Reseña 1" as R1
+file "Venta de entradas" as V
+file Precios
+file Promocións
+
+file "Sobre nós" as SN
+file Contacto
+file Historia
+file Legal
+file Privacidade
+file "Fondos públicos" as FP
+
+file Proxectos
+file "Traballa con nós" as TN
+
+Index --> Blog
+Blog --> A1
+Blog --> A2
+A1 --> R1
+
+Index --> Reseñas
+Reseñas --> R1
+
+Index --> Cartelera
+Cartelera --> P1
+Cartelera --> P2
+P1 --> V
+P2 --> V
+V -> Precios
+Precios -> Promocións
+P1 --> Trailer
+P1 --> R1
+
+Index --> SN
+SN --> Legal
+SN --> Contacto
+SN --> Historia
+Legal --> Privacidade
+Legal --> FP
+
+
+Index --> Proxectos
+Proxectos --> TN
+
+@enduml

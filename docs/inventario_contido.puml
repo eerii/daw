@@ -1,0 +1,42 @@
+@startuml
+skinparam dpi 300
+'skinparam linetype ortho
+skinparam nodesep 50
+skinparam ranksep 100
+
+skinparam default{
+  FontName SF Mono
+  FontSize 12
+}
+
+card "Páxina\nprincipal" as I
+
+card Cartelera
+card Contacto
+card "Venta de\nentradas" as Venta
+card Precios
+card Promocións
+card Proxectos
+card "Traballa\ncon nós" as Traballa
+
+card Privacidade
+card "Fondos\npúblicos" as Fondos
+
+collections "Información\npeliculas" as Peliculas
+collections Blog
+collections Reseñas
+
+Cartelera -- I
+Peliculas -- I
+Proxectos -- I
+Reseñas -- I
+Traballa -- I
+Privacidade -- I
+I -- Venta
+I -- Precios
+I -- Promocións
+I -- Contacto
+I -- Blog
+I -- Fondos
+
+@enduml
