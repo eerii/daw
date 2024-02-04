@@ -1,0 +1,13 @@
+@startuml
+actor Usuario as U 
+
+usecase "leer reseña" as 1
+usecase "seleccionar película" as 2
+usecase "consultar BBDD" as 3
+
+U --> 1
+
+1 .> 2 : include
+2 .> 3 : include
+
+@enduml

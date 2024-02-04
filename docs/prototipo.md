@@ -42,6 +42,34 @@ Dentro do apartado dos proxectos pódese contactar para traballar co cinema.
 
 Por último, é necesaria unha xerarquía para a información de empresa: privacidade, fondos públicos, contacto, historia...
 
+# Casos de uso
+
+Seleccionamos varios casos de uso representativos da páxima web que estamos a desenvolver:
+
+## Consultar horarios da carteleira
+
+![Consultar horarios da carteleira](casos-uso/mirar-horarios.png)
+
+Para consultar o horario dunha película da carteleira é necesario comprobar en qué sala e en que pase estase estáse a proxectar. Coa información do huso horario pode completarse ese caso de uso.
+
+## Ler recensión
+
+![Ler recensión](casos-uso/leer-reseña.png)
+
+Para poder leer unha recensión debe consultarse a base de datos asociada a dita película.
+
+## Enviar preguntas
+
+![Enviar preguntas](casos-uso/enviar-pregunta.png)
+
+O usuario pode enviar preguntas, pero para tramitar o contacto débese proveer de información de contacto. Unha vez realizado isto, o sistema de contacto pode procesar o envío, e o cinema pode confirmar o envío.
+
+## Comprar entradas
+
+![Comprar entradas](casos-uso/comprar-entradas.png)
+
+Para poder comprar unha entrada o usuario deberá seleccionar a película en cuestión, así como a sala e o pase ao que quere asistir. Á hora de tramitar a compra, o sistema terá en conta información previa para calcular a tarifa. O resto do caso de uso é homólogo ao anterior.
+
 # Estrutura de arquivos
 
 ![Estrutura de arquivos](./estructura.png)

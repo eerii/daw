@@ -1,0 +1,18 @@
+@startuml
+actor Usuario as U
+
+usecase "consultar horario" as 1
+usecase "seleccionar película" as 2
+usecase "seleccionar sala" as 3
+usecase "seleccionar pase" as 4
+usecase "proover huso horario" as 5
+
+U --> 1
+
+1 .> 2 : include
+1 .> 5 : include
+
+2 .> 3 : include
+2 .> 4 : include
+
+@enduml

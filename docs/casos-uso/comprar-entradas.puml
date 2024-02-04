@@ -1,0 +1,31 @@
+@startuml
+actor Usuario as U 
+actor "Sistema pago" as SC 
+actor Cine as C 
+
+usecase "comprar entrada" as 1
+usecase "seleccionar película" as 2
+usecase "seleccionar pase" as 3
+usecase "seleccionar sala" as 4
+usecase "proveer información pago" as 5
+usecase "tramitar compra" as 6
+usecase "procesar pedido" as 7
+usecase "confirmar compra" as 8
+
+U --> 1
+SC --> 7
+C --> 8
+
+1 .> 2 : include
+1 .> 6 : include
+
+2 .> 3 : include
+2 .> 4 : include
+
+6 .> 3 : include
+6 .> 4 : include
+6 .> 5 : include
+6 .> 7 : include
+6 .> 8 : include
+
+@enduml

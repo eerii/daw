@@ -1,0 +1,21 @@
+@startuml
+actor Usuario as U 
+actor "Sistema contacto" as SC 
+actor Cine as C 
+
+usecase "enviar pregunta" as 1
+usecase "tramitar contacto" as 2
+usecase "proover información contacto" as 3
+usecase "procesar envío" as 4
+usecase "confirmar envío" as 5
+
+U --> 1
+SC --> 4
+C --> 5
+
+1 .> 2 : include
+2 .> 3 : include
+2 .> 4 : include
+2 .> 5 : include
+
+@enduml
