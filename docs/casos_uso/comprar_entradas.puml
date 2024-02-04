@@ -19,13 +19,13 @@ C --> 8
 1 .> 2 : include
 1 .> 6 : include
 
-2 .> 3 : include
-2 .> 4 : include
+2 ..> 3 : include
+2 ..> 4 : include
 
-6 .> 3 : include
-6 .> 4 : include
-6 .> 5 : include
-6 .> 7 : include
-6 .> 8 : include
+6 ..> 3 : include
+6 ..> 4 : include
+6 ..> 5 : include
+6 ..> 7 : include
+6 ..> 8 : include
 
 @enduml

@@ -1,6 +1,10 @@
 ---
 title: Prototipo do proxecto
-authors: Jorge Lojo Abal, José Pazos Pérez
+author: Jorge Lojo Abal, José Pazos Pérez
+date: 4 de Febreiro de 2023
+geometry: margin=1.2cm
+output: pdf_document
+lang: gl
 ---
 
 ## Introdución
@@ -63,6 +67,16 @@ O usuario pode enviar preguntas, pero para tramitar o contacto débese proveer d
 
 Para poder reservar unha entrada o usuario deberá seleccionar a película en cuestión, así como a sala e o pase ao que quere asistir. Á hora de tramitar a reserva, o sistema terá en conta información previa para informar ó usuario da tarifa que terá que abonar ó chegar ó cine. O resto do caso de uso é homólogo ao anterior.
 
+## Mapa Web
+
+![Mapa Web](docs/mapa-navegacion.png)
+
+Previo ao deseño do noso prototipo é necesario establecer un mapa web para ter claro como vamos a distribuir a información na páxina.
+
+O contido relevante que debe amosarse na páxina principal da web é o de maior interés para o usuario. Por eso deben amosarse as películas de relevancia na carteleria, posiblemente nun formato de carrousel. É importante tamén mostrar de forma simple os carteis dos próximos estreos, así como un resumo das novidades do cine: artigos, reseñas, proxectos... O listado de prezos tamén debería atoparse aquí para facilitar as consultas rápidas.
+
+Dende a páxina principal pódese acceder a diferentes subpáxinas con información máis específica. Trátase da información corporativa do cine (contacto, localización, razón social...), carteleira detallada, proxectos en curso, así como un listado máis extenso sobre as tarifas do cinema.
+
 ## Deseño do prototipo
 
 ### Consideracións previas
@@ -78,6 +92,7 @@ Comezando pola barra superior, hai demasiadas categorías de navegación que ade
 Na páxina para comprar entradas hai tanta información irrelevante que non podes ver sequera a carteleira sen deslizar cara abaixo. Hai que facer clicks innecesarios para seleccionar as sesións. A páxina de precios non é moi profesional e non ten unha táboa clara cos precios exactos por rango de idade / promoción. Da páxina de contacto gústanos o mapa, aínda que podía ter máis zoom, mais o formulario está roto, e de novo a colocación da información fai que sexa necesario deslizar moito cara abaixo.
 
 Ademáis, a páxina é moi lenta de navegar, por unha mezcla de velocidade de carga, librerías moi grandes e transiciones moi longas. Tamén é ridículo ter un footer que ocupe a metade da páxina simplemente por problemas de redimensionamento dos logos.
+
 
 ### Sketch
 
@@ -96,6 +111,12 @@ Na páxina de contacto movemos ó mapa a columna esquerda, creando unha linguaxe
 A páxina de proxectos pode ter dúas columnas iguais, unha coa lista de iniciativas como cine nos institutos e festivais, e outra coa información para traballar có cine.
 
 Todos os deseños están feitos con unha distribución flex en mente e podense adaptar fácilmente a unha interfaz móbil cambiando a dirección dos obxectos. O menú escóndese nunha hamburguesa e os filtros nun botón específico. As listas horizontales agora son verticais e pode facerselles scroll para ver o resto.
+
+### Wireframe
+
+![Wireframe](docs/wireframe.png)
+
+O noso seguinte paso é realizar un wireframe para ter una idea  previa a facer o mockup. Este serviranos de esqueleto para construir un deseño final da nosa páxina web.
 
 ### Mockup
 
@@ -117,7 +138,7 @@ En calqueira momento pode volverse ó inicio facendo click no título "Compostel
 
 ## Estrutura de arquivos
 
-<img src="docs/estructura.svg" width="500" alt="Estructura de arquivos">
+![Estructura de arquivos](docs/estructura.svg){ width=350px }
 
 - `index.html`: páxina base da web (dirección /)
 - `paxina*.html`: outras páxinas, por exemplo, formulario de contacto ou lista de sesións
