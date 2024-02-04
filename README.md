@@ -138,7 +138,7 @@ En calqueira momento pode volverse ó inicio facendo click no título "Compostel
 
 ## Estrutura de arquivos
 
-![Estructura de arquivos](docs/estructura.svg){ width=350px }
+![Estructura de arquivos](docs/estructura.svg)
 
 - `index.html`: páxina base da web (dirección /)
 - `paxina*.html`: outras páxinas, por exemplo, formulario de contacto ou lista de sesións
