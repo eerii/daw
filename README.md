@@ -107,6 +107,14 @@ Todos os deseños están feitos con unha distribución flex en mente e podense a
 
 Neste mockup plantexamos un número reducido de páxinas finais polas que comezará o desarroio. Traballando cunha metodoloxía áxil é moi probable que cuestións importantes do deseño cambien por requisitos que surxan no proxecto, polo que fumos conservadores co traballo en prototipos finais. Creamos mockups das páxinas máis importantes e do caso de uso principal: ver a carteleira e reservar entradas, por ser esta a funcionalidade base que sí ou sí ten que ter a web e por onde comezaremos a traballar.
 
+### Storyboard
+
+![Storyboard](docs/mockup/story_entradas.png)
+
+Decidimos incluír un storyboard para a reserva de entradas. A liña amarilla representa os pasos a seguir. Primeiro, accedese á carteleira (1), e alí elixese unha película (2). Pode utilizarse tanto o botón de reservar entradas coma directamente os horarios da sesión. Unha vez na páxina de reserva elixese a sesión (3) (estará premarcada se xa se seleccionou), introdúcense os datos (4) e especifícase o número e tipo de cada entrada (5). Finalmente, prémese o botón de "Continuar" (6) que confirmará a reserva.
+
+En calqueira momento pode volverse ó inicio facendo click no título "Compostela" (liña rosa). Outra maneira de acceder a esta páxina de entradas é ir ós detalles da película (en múltiples localizaciones, liña verde), e dende alí premer o botón de "Reservar entradas".
+
 ## Estrutura de arquivos
 
 <img src="docs/estructura.svg" width="500" alt="Estructura de arquivos">
