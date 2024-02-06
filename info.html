@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <title>Multicines Compostela</title>
+    <meta charset="utf-8">
+
+    <!-- Estilo e contido estático -->
+    <link rel="stylesheet" href="/assets/style/modern_normalize.css"> <!-- Normalización para tódolos navegadores -->
+
+    <!-- Scripts -->
+</head>
+
+<body>
+    <style>
+        body {
+            padding: 1rem;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+
+            border-bottom: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        header #titulo {
+            flex-grow: 1;
+        }
+
+        main {
+            display: flex;
+            gap: 1rem;
+            min-height: 90vh;
+        }
+
+        aside {
+            width: 15rem;
+            border-right: 1px solid black;
+        }
+
+        section {
+            width: 100%;
+        }
+        section p {
+            margin-bottom: 1rem;
+        }
+    </style>
+
+    <header>
+        <div id="titulo">
+            <p>Multicines</p>
+            <a href="/">
+                <h1>Compostela</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="/cartelera.html">Cartelera</a>
+            <a href="/">Contacto</a>
+            <a href="/">Prezos</a>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt="">
+
+            <h2>Titulo</h2>
+            <p>Duracion: 100min</p>
+            <p>Idioma: Galego</p>
+            <p>Estreo: 2024</p>
+        </aside>
+
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Neque error reiciendis quod provident animi quas qui dolorum labore earum. Sunt temporibus nam debitis dolorum accusamus dolor illo corporis iure at ea doloremque earum nobis, porro in numquam neque.
+            </p>
+
+            <h2>Sesións</h2>
+            <span>10:00</span>
+            <span>19:00</span>
+            <span>20:00</span>
+
+            <h2>Trailer</h2>
+            
+            <iframe width="720" height="480" src="https://www.youtube.com/embed/cnDekV79Few?si=0CAuG0TDipzetHku">
+
+        </section>
+    </main>
+</body>
+
+</html>

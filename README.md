@@ -7,6 +7,21 @@ output: pdf_document
 lang: gl
 ---
 
+## TODO
+
+- [ ] Esqueleto HTML
+    - [x] Inicio
+    - [x] Cartelera
+    - [x] Información película
+    - [ ] Reservar entradas
+    - [ ] Contacto
+    - [ ] Prezos
+    - [ ] Blog
+    - [ ] Proxectos
+    - [ ] Sobre nós
+    - [ ] Privacidade
+    - [ ] Fondos públicos
+
 ## Introdución
 
 Unha empresa de cines de Santiago solicitounos un rediseño integral da súa páxina web. Multicines Compostela ofrece unha carteleira semanal con películas de estreo, así como proxeccións de teatro e ópera. Ós usuarios deben poder consultar a dispoñible en salas e reservar a súa entrada. O cine tamén organiza festivais e ciclos con diferentes temáticas e autores, e ofrece as instalacións para a organización de diversos proxectos (presentacións de libros, concurso de curtas locais, reserva de salas para reposicións privadas...).
