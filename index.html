@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <title>Multicines Compostela</title>
+    <meta charset="utf-8">
+
+    <!-- Estilo e contido estático -->
+    <link rel="stylesheet" href="/assets/style/modern_normalize.css"> <!-- Normalización para tódolos navegadores -->
+
+    <!-- Scripts -->
+</head>
+
+<body>
+    <style>
+        body {
+            padding: 1rem;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+
+            border-bottom: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        header #titulo {
+            flex-grow: 1;
+        }
+
+        .carrousel {
+            display: flex;
+            gap: 1rem;
+
+            border: 1px solid black;
+            border-radius: 0.5rem;
+
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .carrousel>.item {
+            border-radius: 0.5rem;
+        }
+
+        .columnas {
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .columnas>section {
+            flex: 1 1 0;
+        }
+
+        .cuadricula {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+        }
+
+        .cuadricula>article {
+            height: 5rem;
+
+            border: 1px solid black;
+            border-radius: 0.5rem;
+        }
+    </style>
+
+    <header>
+        <div id="titulo">
+            <p>Multicines</p>
+            <a href="/">
+                <h1>Compostela</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="/cartelera.html">Cartelera</a>
+            <a href="/">Contacto</a>
+            <a href="/">Prezos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carrousel">
+            <img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt="">
+            <img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt="">
+            <img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt="">
+        </section>
+
+        <div class="columnas">
+            <section>
+                <h2>Columna 1</h2>
+                <section class="cuadricula">
+                    <article>P1</article>
+                    <article>P2</article>
+                    <article>P3</article>
+                    <article>P4</article>
+                    <article>P5</article>
+                    <article>P6</article>
+                </section>
+            </section>
+
+            <section>
+                <h2>Columna 2</h2>
+
+                <article>
+                    <h3>Artículo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+
+                <article>
+                    <h3>Artículo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

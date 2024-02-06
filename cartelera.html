@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <title>Multicines Compostela</title>
+    <meta charset="utf-8">
+
+    <!-- Estilo e contido estático -->
+    <link rel="stylesheet" href="/assets/style/modern_normalize.css"> <!-- Normalización para tódolos navegadores -->
+
+    <!-- Scripts -->
+</head>
+
+<body>
+    <style>
+        body {
+            padding: 1rem;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+
+            border-bottom: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        header #titulo {
+            flex-grow: 1;
+        }
+
+        main {
+            display: flex;
+            gap: 1rem;
+            min-height: 90vh;
+        }
+
+        aside {
+            width: 15rem;
+            border-right: 1px solid black;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        #fechas {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        #fechas>span {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        article {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        article>div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        article>div>#grow {
+            flex-grow: 1;
+        }
+    </style>
+
+    <header>
+        <div id="titulo">
+            <p>Multicines</p>
+            <a href="/">
+                <h1>Compostela</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="/cartelera.html">Cartelera</a>
+            <a href="/">Contacto</a>
+            <a href="/">Prezos</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h3>Filtros</h3>
+
+            <span>Estreos Ópera Ballet</span>
+
+            <h3>Duración</h3>
+            <input type="range" id="volume" name="volume" min="0" max="100">
+
+            <h3>Idade</h3>
+            <input type="range" id="volume" name="volume" min="0" max="100">
+        </aside>
+
+        <section>
+            <span id="fechas">
+                <span>Lun 1</span>
+                <span>Mar 2</span>
+                <span>Mie 3</span>
+                <span>Jue 4</span>
+                <span>Vie 5</span>
+                <span>Sab 6</span>
+                <span>Dom 7</span>
+            </span>
+
+            <article>
+                <img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt="">
+                <div>
+                    <h3>Titulo</h3>
+                    <span id="grow">100min - Galego - 2024</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <span>
+                        <button>Reservar</button>
+                        <span>10:00</span>
+                        <span>18:30</span>
+                        <span>21:00</span>
+                    </span>
+                </div>
+            </article>
+
+            <article>
+                <img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt="">
+                <div>
+                    <h3>Titulo</h3>
+                    <span id="grow">100min - Galego - 2024</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <span>
+                        <button>Reservar</button>
+                        <span>10:00</span>
+                        <span>18:30</span>
+                        <span>21:00</span>
+                    </span>
+                </div>
+            </article>
+
+            <article>
+                <img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt="">
+                <div>
+                    <h3>Titulo</h3>
+                    <span id="grow">100min - Galego - 2024</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <span>
+                        <button>Reservar</button>
+                        <span>10:00</span>
+                        <span>18:30</span>
+                        <span>21:00</span>
+                    </span>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
