@@ -6,10 +6,11 @@
     <title>Multicines Compostela</title>
     <meta charset="utf-8">
 
+    <!-- Scripts -->
+    <script src="/assets/lib/inline_css.js"></script>
+
     <!-- Estilo e contido estático -->
     <link rel="stylesheet" href="/assets/style/modern_normalize.css"> <!-- Normalización para tódolos navegadores -->
-
-    <!-- Scripts -->
 </head>
 
 <body>
@@ -49,16 +50,6 @@
             border-radius: 0.5rem;
         }
 
-        .columnas {
-            display: flex;
-            width: 100%;
-            gap: 1rem;
-        }
-
-        .columnas>section {
-            flex: 1 1 0;
-        }
-
         .cuadricula {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -94,7 +85,24 @@
             <a href="/info.html"><img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt=""></a>
         </section>
 
-        <div class="columnas">
+        <div>
+            <style>
+                this {
+                    display: flex;
+                    width: 100%;
+                    gap: 1rem;
+                }
+
+                this>section {
+                    flex: 1 1 0;
+                }
+
+                @media md- {
+                    this {
+                        flex-direction: column;
+                    }
+                }
+            </style>
             <section>
                 <h2>Columna 1</h2>
                 <section class="cuadricula">
@@ -112,12 +120,14 @@
 
                 <article>
                     <h3>Artículo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
                 </article>
 
                 <article>
                     <h3>Artículo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
                 </article>
             </section>
         </div>

@@ -7,7 +7,8 @@ output: pdf_document
 lang: gl
 ---
 
-## TODO
+<details>
+<summary><b>To do</b></summary>
 
 - [ ] Esqueleto HTML
     - [x] Inicio
@@ -21,6 +22,8 @@ lang: gl
     - [ ] Sobre nós
     - [ ] Privacidade
     - [ ] Fondos públicos
+
+</details>
 
 ## Introdución
 
