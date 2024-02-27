@@ -1,17 +1,37 @@
-<style>
-    this h1 {
-        margin: 0;
-        padding: 0;
-    }
-</style>
-<div id="titulo">
-    <p>Multicines</p>
-    <a href="/">
-        <h1>Compostela</h1>
-    </a>
-</div>
-<nav>
-    <a href="/cartelera.html">Cartelera</a>
-    <a href="/">Contacto</a>
-    <a href="/">Prezos</a>
-</nav>
+<header>
+    <style>
+        this {
+            display: flex;
+            align-items: center;
+
+            border-bottom: 1px solid black;
+        }
+
+        this nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        this #titulo {
+            flex-grow: 1;
+        }
+
+        this h1 {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <div id="titulo">
+        <p>Multicines</p>
+        <a href="/">
+            <h1>Compostela</h1>
+        </a>
+    </div>
+
+    <nav>
+        <a href="/cartelera.html">Cartelera</a>
+        <a href="/">Contacto</a>
+        <a href="/">Prezos</a>
+    </nav>
+</header>

@@ -16,48 +16,7 @@
 </head>
 
 <body>
-    <style>
-        body {
-            padding: 1rem;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-
-            border-bottom: 1px solid black;
-        }
-
-        nav {
-            display: flex;
-            gap: 1rem;
-        }
-
-        header #titulo {
-            flex-grow: 1;
-        }
-
-        main {
-            display: flex;
-            gap: 1rem;
-            min-height: 90vh;
-        }
-
-        aside {
-            width: 15rem;
-            border-right: 1px solid black;
-        }
-
-        section {
-            width: 100%;
-        }
-
-        section p {
-            margin-bottom: 1rem;
-        }
-    </style>
-
-    <header hx-get="/components/nav.html" hx-trigger="load"></header>
+    <header hx-get="/components/nav.html" hx-trigger="load" hx-swap="outerHTML"></header>
 
     <main>
         <aside>

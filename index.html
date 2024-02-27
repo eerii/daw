@@ -13,86 +13,26 @@
     <!-- Estilo e contido estático -->
     <link rel="stylesheet" href="/assets/style/modern_normalize.css"> <!-- Normalización para tódolos navegadores -->
     <link rel="stylesheet" href="/assets/style/base.css">
+    <link rel="stylesheet" href="/assets/style/components.css">
 </head>
 
 <body>
-    <style>
-        body {
-            padding: 1rem;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-
-            border-bottom: 1px solid black;
-        }
-
-        nav {
-            display: flex;
-            gap: 1rem;
-        }
-
-        header #titulo {
-            flex-grow: 1;
-        }
-
-        .carrousel {
-            display: flex;
-            gap: 1rem;
-
-            border: 1px solid black;
-            border-radius: 0.5rem;
-
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-
-        .carrousel .item {
-            border-radius: 0.5rem;
-        }
-
-        .cuadricula {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 1rem;
-        }
-
-        .cuadricula>article {
-            height: 5rem;
-
-            border: 1px solid black;
-            border-radius: 0.5rem;
-        }
-    </style>
-
-    <header hx-get="/components/nav.html" hx-trigger="load"></header>
+    <header hx-get="/components/nav.html" hx-trigger="load" hx-swap="outerHTML"></header>
 
     <main>
+        <style>
+            this {
+                flex-direction: column;
+            }
+        </style>
+
         <section class="carrousel">
             <a href="/info.html"><img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt=""></a>
             <a href="/info.html"><img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt=""></a>
             <a href="/info.html"><img class="item" width="200" src="assets/media/imaxes/sen-portada.webp" alt=""></a>
         </section>
 
-        <div>
-            <style>
-                this {
-                    display: flex;
-                    width: 100%;
-                    gap: 1rem;
-                }
-
-                this>section {
-                    flex: 1 1 0;
-                }
-
-                @media md- {
-                    this {
-                        flex-direction: column;
-                    }
-                }
-            </style>
+        <div class="columnas">
             <section>
                 <h2>Columna 1</h2>
                 <section class="cuadricula">

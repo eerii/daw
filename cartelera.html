@@ -16,73 +16,7 @@
 </head>
 
 <body>
-    <style>
-        body {
-            padding: 1rem;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-
-            border-bottom: 1px solid black;
-        }
-
-        nav {
-            display: flex;
-            gap: 1rem;
-        }
-
-        header #titulo {
-            flex-grow: 1;
-        }
-
-        main {
-            display: flex;
-            gap: 1rem;
-            min-height: 90vh;
-        }
-
-        aside {
-            width: 15rem;
-            border-right: 1px solid black;
-        }
-
-        section {
-            width: 100%;
-        }
-
-        #fechas {
-            display: flex;
-            margin-bottom: 1rem;
-        }
-
-        #fechas>span {
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        article {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        article>a {
-            flex-shrink: 0;
-        }
-
-        article>div {
-            display: flex;
-            flex-direction: column;
-        }
-
-        article>div>#grow {
-            flex-grow: 1;
-        }
-    </style>
-
-    <header hx-get="/components/nav.html" hx-trigger="load"></header>
+    <header hx-get="/components/nav.html" hx-trigger="load" hx-swap="outerHTML"></header>
 
     <main>
         <aside>
@@ -98,6 +32,31 @@
         </aside>
 
         <section>
+            <style>
+                this #fechas {
+                    display: flex;
+                    margin-bottom: 1rem;
+                }
+
+                this #fechas>span {
+                    flex-grow: 1;
+                    text-align: center;
+                }
+
+                this article>a {
+                    flex-shrink: 0;
+                }
+
+                this article>div {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                this article>div>#grow {
+                    flex-grow: 1;
+                }
+            </style>
+
             <span id="fechas">
                 <span>Lun 1</span>
                 <span>Mar 2</span>

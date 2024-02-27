@@ -140,15 +140,23 @@ nav a:active {
 /* Seccions */
 
 main {
+  display: flex;
+  gap: 1rem;
 }
 
 article {
-}
-
-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 aside {
+  width: 15rem;
+  border-right: 1px solid black;
+}
+
+section {
+  width: 100%;
 }
 
 search {
