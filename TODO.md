@@ -1,0 +1,107 @@
+# Multicines compostela
+
+## TODO
+
+- [ ] Práctica 2
+    - [ ] Codificación HTML de las páginas
+    - [ ] Enlaces entre ls págicas
+    - [ ] Enlaces externos
+    - [ ] Establecimiento del despligue de la aplicación a nivel de organización de ficheros y carptes
+    - [ ] Sobre la memoria
+        - [ ] Sección dedicada a HTML
+            - [ ] mapas de etiquetas de 4-5 páginas más representativas
+        - [ ] Inclusión del diagrama de despliegue de carpetas y ficheros actualizado.
+- [ ] Práctica 3
+    - [ ] Dotar de estilo a la web
+    - [ ] Formateo básico (primera semana):
+        - [ ] Hoja de estilo que afecte a todas las págicas diseñasas
+            - [ ] Reglas de fuentes y colores.
+            - [ ] Reglas de posicionamiento de elementos genéricas
+        - [ ] Hojas de estilo para páginas concretas
+            - [ ] reglas de posicionamiento particulares.
+        - > [!NOTE] Páginas no seleciconadas en la segunda parte
+    - [ ] Páginas responsivas (segunda semana):
+        - [ ] Seleccionar 5 páginas diferentes para aplicar responsividad.
+            - [ ]  Aplicar una técnica a cada página:
+                - [ ] Uso de “Flexible Grids” con creación de reglas básicas que incluyan puntos de ruptura.
+                - [ ] Uso de “CSS Multicol”.
+                - [ ] Uso de CSS con “Flex Container”
+                - [ ] Uso de “CSS Grid”
+                - [ ] Uso de la librería “Bootstrap”
+    - [ ] Sobre la memoria
+        - [ ] Incluir pantazallos y diagramas (vid. guion) a 5 páginas representativas.
+- [ ] Práctica 4
+    - [ ] Dotar de dinamismo al sitio web
+    - [ ] 26 febrero - 1 marzo
+        - [ ] 2 efectos visibles.
+            - [ ] 5 métodos de acceso al DOM
+            - [ ] responder a 3 eventos
+    - [ ] 4 marzo - 8 marzo
+        - [ ] 2 efectos visibles
+            - [ ] Uso de objetos JQuery
+            - [ ] Uso de JES6
+        - > [!NOTE] Si son modificaciones de los efectos anteriores, documentar los cambios en la memoria
+    - [ ] 11 marzo - 15 marzo
+        - [ ] 2 efectos visibles
+            - [ ] Carga de contenido en XML
+            - [ ] Carga de contenido en JSON
+        - [ ] 2 formas diferentes de cargar datos entre:
+            - [ ] XMLHttpRequest
+            - [ ] JQuery
+            - [ ] API Fech
+        - > [!NOTE] Los navegadores por seguridad no permiten cargar contenido de local. Instalar un servidor HTTP. Recomendación: <https://httpd.apache.org>
+    - [ ] Sobre la memoria:
+        - [ ] Sección dedicada a JavaScript
+            - [ ] Descripción del efecto producido
+                - [ ] Inclusión de pantallazos
+            - [ ] Explicación de las partes críticas del código
+                - [ ] minted
+        - [ ] Actualización del árbol de despliegue de fiheros y carpetas ...
+  ---
+- [ ] Esqueleto HTML
+    - [x] Inicio
+    - [x] Cartelera
+    - [x] Información película
+    - [ ] Reservar entradas
+    - [ ] Contacto
+    - [ ] Prezos
+    - [ ] Blog
+    - [ ] Proxectos
+    - [ ] Sobre nós
+    - [ ] Privacidade
+    - [ ] Fondos públicos
+- [ ] Crear componentes reutilizables
+    - [ ] Navegación
+    - [ ] ...
+- [ ] Definir tema CSS global
+    - [ ] Elegir tipografía
+    - [ ] Componentes individuales
+        - [ ] Tarjetas
+        - [ ] Carrousel
+- [ ] Funcionalidad interactiva
+    - [ ] Cosas con javascript
+
+## DONE
+
+- [x] Practica 1
+    - [X]  Texto introductorio
+    - [X] Inventario de contido
+        - Revisar e engadir algunha cousa se fai falta
+    - [x] Arquitectura da información
+        - Mirar se se pode completar máis
+        - [x] Engadir cores
+        - [x] Volver a generar la imagen
+    - [x] Casos de uso
+        - [x] Mirar horarios na cartelera
+        - [x] Comprar entradas
+        - [x] Ler unha reseña
+        - [x] Enviar unha pregunta
+        - ...
+    - [x] Mapa web
+    - [x] Interfaces 5 páginas
+        - [x] Prototipo manual
+        - [x] Wireframe (plantuml? <https://plantuml.com/salt>)
+        - [x] Mockup (figma)
+        - [x] Storyboard
+            - [x] Comprar entrada
+    - [x] Estructura de ficheros

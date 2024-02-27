@@ -16,6 +16,7 @@
     - [ ] Prototipo manual
     - [ ] Wireframe (plantuml? https://plantuml.com/salt)
     - [ ] Mockup (figma)
-    - [ ] Storyboard
+      - [ ] Storyboard
         - [ ] Comprar entrada
 - [x] Estructura de ficheros
+- [ ] 

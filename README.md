@@ -7,33 +7,10 @@ output: pdf_document
 lang: gl
 ---
 
-<details>
-<summary><b>To do</b></summary>
+[//]: # (<details>)
+[//]: # (<summary><b>To do</b></summary>)
 
-- [ ] Esqueleto HTML
-    - [x] Inicio
-    - [x] Cartelera
-    - [x] Información película
-    - [ ] Reservar entradas
-    - [ ] Contacto
-    - [ ] Prezos
-    - [ ] Blog
-    - [ ] Proxectos
-    - [ ] Sobre nós
-    - [ ] Privacidade
-    - [ ] Fondos públicos
-- [ ] Crear componentes reutilizables
-    - [ ] Navegación
-    - [ ] ...
-- [ ] Definir tema CSS global
-    - [ ] Elegir tipografía
-    - [ ] Componentes individuales
-        - [ ] Tarjetas
-        - [ ] Carrousel
-- [ ] Funcionalidad interactiva
-    - [ ] Cosas con javascript
-
-</details>
+[//]: # (</details>)
 
 ## Introdución
 
@@ -43,7 +20,7 @@ Multicines tamén quere comezar un blog onde poidan publicar artigos sobre difer
 
 ## Inventario de contido
 
-![Inventario de contido](docs/inventario_contido.svg)
+![Inventario de contido](docs/informe/inventario_contido.svg)
 
 Dados os requerimentos dados pola empresa, un inventario de contido adecuado sería o seguinte:
 
@@ -61,7 +38,7 @@ Dados os requerimentos dados pola empresa, un inventario de contido adecuado ser
 
 ## Arquitectura da información
 
-![Arquitectura da información](docs/arquitectura_informacion.svg)
+![Arquitectura da información](docs/informe/arquitectura_informacion.svg)
 
 Unha vez realizado o inventario de contidos da web debemos xerarquizalos. Tras a análise detida do contexto, podemos identificar 5 categorías principais:
 
@@ -97,7 +74,7 @@ Para poder reservar unha entrada o usuario deberá seleccionar a película en cu
 
 ## Mapa Web
 
-![Mapa Web](docs/mapa-navegacion.png)
+![Mapa Web](docs/informe/mapa-navegacion.png)
 
 Previo ao deseño do noso prototipo é necesario establecer un mapa web para ter claro como vamos a distribuir a información na páxina.
 
@@ -121,10 +98,9 @@ Na páxina para comprar entradas hai tanta información irrelevante que non pode
 
 Ademáis, a páxina é moi lenta de navegar, por unha mezcla de velocidade de carga, librerías moi grandes e transiciones moi longas. Tamén é ridículo ter un footer que ocupe a metade da páxina simplemente por problemas de redimensionamento dos logos.
 
-
 ### Sketch
 
-![Sketch](docs/sketch.svg)
+![Sketch](docs/informe/sketch.svg)
 
 A idea do rediseño é facer unha interfaz accesible e responsiva que conteña a información importante sen ter que desplazarse moito. Creamos unha páxina principal cun carrousel cos estrenos máis relevantes (que permite incluír máis información sen ocupar espazo). Despois facemos dous columnas, unha para o resto de estreos, e outra con novidades do blog, promocións ou eventos.
 
@@ -142,7 +118,7 @@ Todos os deseños están feitos con unha distribución flex en mente e podense a
 
 ### Wireframe
 
-![Wireframe](docs/wireframe.png)
+![Wireframe](docs/informe/wireframe.png)
 
 O noso seguinte paso é realizar un wireframe para ter una idea  previa a facer o mockup. Este serviranos de esqueleto para construir un deseño final da nosa páxina web.
 
@@ -166,7 +142,7 @@ En calqueira momento pode volverse ó inicio facendo click no título "Compostel
 
 ## Estrutura de arquivos
 
-![Estructura de arquivos](docs/estructura.svg)
+![Estructura de arquivos](docs/informe/estructura.svg)
 
 - `index.html`: páxina base da web (dirección /)
 - `paxina*.html`: outras páxinas, por exemplo, formulario de contacto ou lista de sesións
