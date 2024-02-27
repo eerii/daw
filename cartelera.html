@@ -6,10 +6,13 @@
     <title>Multicines Compostela</title>
     <meta charset="utf-8">
 
+    <!-- Scripts -->
+    <script src="/assets/lib/htmx.min.js"></script>
+    <script src="/assets/lib/inline_css.js"></script>
+
     <!-- Estilo e contido estático -->
     <link rel="stylesheet" href="/assets/style/modern_normalize.css"> <!-- Normalización para tódolos navegadores -->
-
-    <!-- Scripts -->
+    <link rel="stylesheet" href="/assets/style/base.css">
 </head>
 
 <body>
@@ -79,19 +82,7 @@
         }
     </style>
 
-    <header>
-        <div id="titulo">
-            <p>Multicines</p>
-            <a href="/">
-                <h1>Compostela</h1>
-            </a>
-        </div>
-        <nav>
-            <a href="/cartelera.html">Cartelera</a>
-            <a href="/">Contacto</a>
-            <a href="/">Prezos</a>
-        </nav>
-    </header>
+    <header hx-get="/components/nav.html" hx-trigger="load"></header>
 
     <main>
         <aside>

@@ -22,6 +22,16 @@ lang: gl
     - [ ] Sobre nós
     - [ ] Privacidade
     - [ ] Fondos públicos
+- [ ] Crear componentes reutilizables
+    - [ ] Navegación
+    - [ ] ...
+- [ ] Definir tema CSS global
+    - [ ] Elegir tipografía
+    - [ ] Componentes individuales
+        - [ ] Tarjetas
+        - [ ] Carrousel
+- [ ] Funcionalidad interactiva
+    - [ ] Cosas con javascript
 
 </details>
 
